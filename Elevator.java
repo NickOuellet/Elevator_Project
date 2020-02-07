@@ -112,16 +112,24 @@ public class Elevator {
   }
 
   /**
-   * public void - Flips the status of an elevator
+   * public void - Flips the direction of an elevator
    */
-  public void flipStatus() {
-    if (this.status == false) {
-      this.status = true;
+  public void flipDirection() {
+    if (this.dirOfTravel == false) {
+      this.dirOfTravel = true;
     }
     else {
-      this.status = false;
+      this.dirOfTravel = false;
     }
   }
 
-//Last line before end of class }
+  /**
+   * public boolean - Returns the direction of travel
+   *
+   * @return boolean  The direction of travel. True = Going Up; False = Going down   
+   */
+  public boolean getDirection() {
+    return this.dirOfTravel;
+  }
+//Last line before end of class
 }
