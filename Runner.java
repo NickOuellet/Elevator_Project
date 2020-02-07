@@ -5,7 +5,14 @@ public class Runner {
 
     Elevator elevator1 = new Elevator();
 
-    System.out.println(elevator1.getName());
+    System.out.println(elevator1.getName()); //Test getName()
+
+    System.out.println("Curr floor: " + elevator1.getCurrFloor());
+    elevator1.travelUp();
+    elevator1.travelUp();
+    System.out.println("Curr floor: " + elevator1.getCurrFloor());
+    elevator1.travelDown();
+    System.out.println("Curr floor: " + elevator1.getCurrFloor());
 
   }
 }
